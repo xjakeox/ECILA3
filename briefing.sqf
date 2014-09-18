@@ -46,10 +46,10 @@ player createDiarySubject ["controls","Controls"];
 				These are considered exploits, and you will not be kicked, but banned.<br/><br/>
 
 				1. Getting out of jail via any method other than paying bail or escaping via helicopter.<br/>
-				2. Killing yourself to get out of roleplay. Getting out of being tazed, restrained, arrested, jail, etc. If the log shows you got arrested, then you died, you will be banned. Do not pay bail and kill yourself for an easy ride home. Walk you lazy turd.<br/>
+				2. Killing yourself to get out of roleplay. Getting out of being tazed, restrained, arrested, jail, etc. If the log shows you got arrested, then you died, you will be banned. Do not pay bail and kill yourself for an easy ride home.<br/>
 				3. Duping items and/or money. If someone sends you an unobtainable amount of money right at the start of the game, report to an admin IMMEDIATELY and transfer said money to an admin. Do this ASAP or an admin could ban you if they see that much on you without question.<br/>
 				4. Using clearly hacked items. If a hacker comes in and spawns unobtainable items, you could be banned for using said items. Report the items to the admins immediately and stay away from them.<br/>
-				5. Abusing bugs or game mechanics for gain. Is there a replicating gun somewhere? Report it and leave it alone. If an admin catches you abusing the glitch, ban.<br/><br/>
+				5. Abusing bugs or game mechanics for personal gain.<br/><br/>
 				"
 		]
 	];
@@ -79,7 +79,7 @@ player createDiarySubject ["controls","Controls"];
 				1. Hacking<br/>
 				2. Cheating<br/>
 				3. Exploiting (See 'Exploits')<br/>
-				4. Being kicked 3 or more times.<br/><br/>
+				4. Being kicked 3 or more times(Results in a 5 day ban, after that if you get kicked again, it's a permanent ban.<br/><br/>
 				"
 		]
 	];
@@ -120,7 +120,7 @@ player createDiarySubject ["controls","Controls"];
 				
 				1. Purposefully ramming a helicopter into anything. Other helicopters, vehicles, buildings.<br/>
 				2. Flying below 150m over the city constantly. Once is illegal, more than that you risk crashing into the city, thus against server rules.<br/>
-				3. Stealing helicopters without proper warning and significant time for the driver to lock the vehicle. If they land and run away without locking, fine, if they just get out and you get in before they get a chance to lock it, no no.<br/><br/>
+				3. Stealing helicopters without proper warning and significant time for the driver to lock the vehicle. If they land and run away without locking, fine, if they just get out and you get in before they get a chance to lock it, no.<br/><br/>
 				"
 		]
 	];

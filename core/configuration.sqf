@@ -31,19 +31,19 @@ life_respawned = false;
 life_removeWanted = false;
 
 //Persistent Saving
-__CONST__(life_save_civ,FALSE); //Save weapons for civs?
+__CONST__(life_save_civ,TRUE); //Save weapons for civs?
 __CONST__(life_save_yinv,FALSE); //Save Y-Inventory for players?
 
 //Revive constant variables.
-__CONST__(life_revive_cops,TRUE); //Set to false if you don't want cops to be able to revive downed players.
-__CONST__(life_revive_fee,250); //Fee for players to pay when revived.
+__CONST__(life_revive_cops,FALSE); //Set to false if you don't want cops to be able to revive downed players.
+__CONST__(life_revive_fee,50); //Fee for players to pay when revived.
 
 //House Limit
 __CONST__(life_houseLimit,5); //Maximum amount of houses a player can buy (TODO: Make Tiered licenses).
 
 //Gang related stuff?
-__CONST__(life_gangPrice,75000); //Price for creating a gang (They're all persistent so keep it high to avoid 345345345 gangs).
-__CONST__(life_gangUpgradeBase,10000); //MASDASDASD
+__CONST__(life_gangPrice,35000); //Price for creating a gang (They're all persistent so keep it high to avoid 345345345 gangs).
+__CONST__(life_gangUpgradeBase,4500); //MASDASDASD
 __CONST__(life_gangUpgradeMultipler,2.5); //BLAH
 
 //Uniform price (0),Hat Price (1),Glasses Price (2),Vest Price (3),Backpack Price (4)
@@ -53,8 +53,8 @@ life_clothing_purchase = [-1,-1,-1,-1,-1];
 ****** Weight Variables *****
 *****************************
 */
-life_maxWeight = 24; //Identifies the max carrying weight (gets adjusted throughout game when wearing different types of clothing).
-life_maxWeightT = 24; //Static variable representing the players max carrying weight on start.
+life_maxWeight = 32; //Identifies the max carrying weight (gets adjusted throughout game when wearing different types of clothing).
+life_maxWeightT = 32; //Static variable representing the players max carrying weight on start.
 life_carryWeight = 0; //Represents the players current inventory weight (MUST START AT 0).
 
 /*
@@ -74,9 +74,9 @@ life_thirst = 100;
 life_hunger = 100;
 __CONST__(life_paycheck_period,5); //Five minutes
 life_cash = 0;
-__CONST__(life_impound_car,350);
+__CONST__(life_impound_car,250);
 __CONST__(life_impound_boat,250);
-__CONST__(life_impound_air,850);
+__CONST__(life_impound_air,1000);
 life_istazed = false;
 life_my_gang = ObjNull;
 
@@ -86,18 +86,18 @@ switch (playerSide) do
 {
 	case west: 
 	{
-		life_atmcash = 7000; //Starting Bank Money
-		life_paycheck = 500; //Paycheck Amount
+		life_atmcash = 20000; //Starting Bank Money
+		life_paycheck = 450; //Paycheck Amount
 	};
 	case civilian: 
 	{
-		life_atmcash = 3000; //Starting Bank Money
-		life_paycheck = 350; //Paycheck Amount
+		life_atmcash = 2500; //Starting Bank Money
+		life_paycheck = 150; //Paycheck Amount
 	};
 	
 	case independent: {
-		life_atmcash = 6500;
-		life_paycheck = 450;
+		life_atmcash = 20000;
+		life_paycheck = 350;
 	};
 };
 
@@ -194,7 +194,7 @@ life_licenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["marijuana",2000],["turtle",3000],["blastingcharge",10000],["boltcutter",500]];
+life_illegal_items = [["heroinu",600],["heroinp",1250],["cocaine",750],["cocainep",1750],["marijuana",1000],["turtle",1500],["blastingcharge",7500],["boltcutter",500]];
 
 
 /*
@@ -202,76 +202,76 @@ life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocai
 */
 sell_array = 
 [
-	["apple",50],
-	["heroinu",1850],
-	["heroinp",2650],
-	["salema",45],
-	["ornate",40],
-	["mackerel",175],
-	["tuna",700],
-	["mullet",250],
+	["apple",35],
+	["heroinu",1500],
+	["heroinp",2250],
+	["salema",60],
+	["ornate",75],
+	["mackerel",225],
+	["tuna",1000],
+	["mullet",300],
 	["catshark",300],
 	["rabbit",65],
-	["oilp",3200],
-	["turtle",3000],
+	["oilp",1200],
+	["turtle",1250],
 	["water",5],
 	["coffee",5],
 	["turtlesoup",1000],
 	["donuts",60],
-	["marijuana",2350],
+	["marijuana",1400],
 	["tbacon",25],
 	["lockpick",75],
-	["pickaxe",750],
+	["pickaxe",50],
 	["redgull",200],
 	["peach",55],
-	["cocaine",3000],
-	["cocainep",5000],
+	["cocaine",1750],
+	["cocainep",3200],
 	["diamond",750],
-	["diamondc",2000],
-	["iron_r",3200],
-	["copper_r",1500],
-	["salt_r",1650],
-	["glass",1450],
+	["diamondc",1200],
+	["iron_r",1100],
+	["copper_r",900],
+	["salt_r",850],
+	["glass",700],
 	["fuelF",500],
 	["spikeStrip",1200],
-	["cement",1950],
-	["goldbar",95000]
+	["cement",1500],
+	["goldbar",20000]
 ];
 __CONST__(sell_array,sell_array);
 
 buy_array = 
 [
 	["apple",65],
-	["rabbit",75],
-	["salema",55],
-	["ornate",50],
-	["mackerel",200],
-	["tuna",900],
-	["mullet",300],
-	["catshark",350],
+	["rabbit",85],
+	["salema",100],
+	["ornate",125],
+	["mackerel",350],
+	["tuna",1500],
+	["mullet",500],
+	["catshark",450],
 	["water",10],
-	["turtle",4000],
+	["turtle",2250],
 	["turtlesoup",2500],
 	["donuts",120],
 	["coffee",10],
 	["tbacon",75],
 	["lockpick",150],
-	["pickaxe",1200],
-	["redgull",1500],
+	["pickaxe",150],
+	["redgull",400],
 	["fuelF",850],
 	["peach",68],
 	["spikeStrip",2500],
-	["blastingcharge",35000],
+	["blastingcharge",15000],
 	["boltcutter",7500],
 	["defusekit",2500],
-	["storagesmall",75000],
-	["storagebig",150000]
+	["storagesmall",20000],
+	["storagebig",50000]
 ];
 __CONST__(buy_array,buy_array);
 
 life_weapon_shop_array =
 [
-	["arifle_sdar_F",7500],
+	["arifle_sdar_F",4000],
 	["hgun_P07_snds_F",650],
 	["hgun_P07_F",1500],
 	["ItemGPS",45],

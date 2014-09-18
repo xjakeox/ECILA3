@@ -64,14 +64,14 @@ class CfgSounds
 	class unlock
 	{
 		name = "unlock";
-		sound [] ={"\sounds\unlock.ogg", 1.0 1};
+		sound[] = {"\sounds\unlock.ogg", 1.0, 1};
 		titles[] = {};
 	};
 	
 	class lock
 	{
 		name = "lock";
-		sound [] ={"\sounds\lock.ogg", 1.0 1};
+		sound[] = {"\sounds\lock.ogg", 1.0, 1};
 		titles[] = {};
 	};
 	

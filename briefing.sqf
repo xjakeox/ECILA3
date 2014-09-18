@@ -189,20 +189,17 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-
-	player createDiaryRecord ["serverrules",
-		[
-			"Don't Be A Dick!", 
-				"
-				If an admin has to tell you that you are being a dick, you are doing dickish things.<br/>
-				Causing others grief, disrupting roleplay, the list goes on.<br/>
-				Just don't be a dick okay?<br/>
-				This rule may be invoked at an admin's discretion.<br/><br/>
-				"
-		]
-	];
 	
 // Police Section
+	player createDiaryRecord ["policerules",
+		[
+			"East Central Police Department"
+				"
+				In order to play as a cop you must be apart of the East Central Police Department, this means you must go to our website and fill out an application. If you are accepted you will then have ot go through one of our Police Academy Classes.
+				Website Coming Soon!
+				"
+		]
+	];				
 	player createDiaryRecord ["policerules",
 		[
 			"Crisis Negotiation",
@@ -315,7 +312,7 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Speeding", 
 				"
-				The following speeds are to be enforced by the Altis Police Force for the absolute safety of the citizens of Kavala and all travelling beyond the city.<br/><br/>
+				The following speeds are to be enforced by the East Central Police Department for the absolute safety of the citizens of Kavala and all travelling beyond the city.<br/><br/>
 				
 				Inside major cities:<br/>
 				Small roads: 50km/h<br/>
@@ -434,7 +431,7 @@ player createDiarySubject ["controls","Controls"];
 				Police Chain of Command:<br/>
 				1. Chief<br/>
 				2. Deputy Chief<br/>
-				3. Superintendent<br/>
+				3. Major<br/>
 				4. Captain<br/>
 				5. Lieutenant<br/>
 				6. Sergeant<br/>
@@ -442,7 +439,7 @@ player createDiarySubject ["controls","Controls"];
 				8. Patrol Officer<br/>
 				9. Cadet<br/><br/>
 
-				Cops in game who are not enrolled/accepted into the SPD are the lowest tier and have no say in police operations.<br/><br/>
+				Cops in game who are not enrolled/accepted into the ECPD are the lowest tier and have no say in police operations.<br/><br/>
 				"
 		]
 	];
@@ -452,23 +449,11 @@ player createDiarySubject ["controls","Controls"];
 			"Use of Lethal Force",
 				"
 				1. Use of Lethal force is only permitted for the protection of your life, another officers life, or a civilians life, if and only if non-lethal force would not be effective.<br/>
-				2. Discharging of a weapon when not under threat or not during training exercises is not allowed. Officers caught in violation of this rule will be removed from the server and suspended from the SPD.<br/>
-				3. Failure to follow proper weapons discipline and procedure will get you removed from the server and suspended from the SPD.<br/><br/>
+				2. Discharging of a weapon when not under threat or not during training exercises is not allowed. Officers caught in violation of this rule will be removed from the server and suspended from the ECPD.<br/>
+				3. Failure to follow proper weapons discipline and procedure will get you removed from the server and suspended from the ECPD.<br/><br/>
 				"
 		]
 	];
-	
-	player createDiaryRecord ["policerules",
-		[
-			"Teamspeak Rule",
-				"
-				1. All cops must be on Teamspeak 3 in a designated cop channel. Failure to be on Teamspeak during an admin check will result in your immediate dismissal from the server.<br/>
-				2. Please join Teamspeak BEFORE you spawn in as a cop, heck, join Teamspeak before you even join the server.<br/><br/>
-				"
-		]
-	];
-	
-	
 	
 // Illegal Items Section
 	player createDiaryRecord ["illegalitems",

@@ -1,5 +1,5 @@
-author = "Tonic";
-onLoadName = "Altis Life RPG v3.1.4.8";
+author = "Tonic & ECIL Dev Team";
+onLoadName = "East Central Island Life 0.0.1";
 onLoadMission = "A RPG game mode developed by Tonic";
 joinUnassigned = 1;
 respawn = BASE;

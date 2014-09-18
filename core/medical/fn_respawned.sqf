@@ -64,7 +64,7 @@ if(!isNil "life_copRecieve") then {
 	life_copRecieve = nil;
 };
 
-//So I guess a fellow gang member, cop or myself killed myself so get me off that Altis Most Wanted
+//So I guess a fellow gang member, cop or myself killed myself so get me off that East Central's Most Wanted
 if(life_removeWanted) then {
 	[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
 };

@@ -25,7 +25,7 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Official Change Log",
 				"
-					The official change log can be found on the BIS forums (search Altis Life RPG)
+					The official change log can be found on the East Central Island Life website (Website Coming Soon!)
 				"
 		]
 	];

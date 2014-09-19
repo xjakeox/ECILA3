@@ -1,4 +1,6 @@
-author = "Tonic & ECIL Dev Team";
+/** Removing these guy's names. They weren't important anyways **/
+//author = "Tonic & ECIL Dev Team";
+author = "Stayton";
 onLoadName = "East Central Island Life 0.0.1";
 onLoadMission = "A RPG game mode developed by Tonic";
 joinUnassigned = 1;

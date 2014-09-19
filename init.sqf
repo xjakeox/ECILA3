@@ -1,4 +1,3 @@
-enableSaving [false, false];
 
 X_Server = false;
 X_Client = false;
